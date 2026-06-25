@@ -1,0 +1,152 @@
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sec-head {
+  max-width: 60ch;
+}
+
+.sec-kick {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 14px;
+}
+
+.sec-kick .bar {
+  width: 26px;
+  height: 3px;
+  background: var(--rust);
+}
+
+.sec-h2 {
+  font-weight: 800;
+  font-size: clamp(1.9rem, 6vw, 3.1rem);
+  line-height: 1.02;
+  letter-spacing: -.025em;
+}
+
+.sec-intro {
+  margin-top: 16px;
+  font-size: clamp(1rem, 2.3vw, 1.12rem);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.trade {
+  background: var(--kraft-2);
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding: var(--pad);
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.steps {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.step {
+  position: relative;
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+
+.step__no {
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--rust);
+  line-height: 1;
+}
+
+.step__t {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  letter-spacing: -.01em;
+}
+
+.step__d {
+  margin-top: 6px;
+  font-size: .96rem;
+  color: var(--ink-2);
+  line-height: 1.5;
+  max-width: 34ch;
+}
+
+.benefits {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.benefit {
+  display: flex;
+  align-items: baseline;
+  gap: 11px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.benefit .tick {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  background: var(--ink);
+  color: var(--kraft);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 800;
+  transform: translateY(3px);
+}
+
+.trade-link {
+  margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--rust);
+  padding-bottom: 5px;
+  transition: color .2s;
+}
+
+.trade-link:hover {
+  color: var(--rust);
+}
+
+.trade-link .dn {
+  transition: transform .25s;
+}
+
+.trade-link:hover .dn {
+  transform: translateY(3px);
+}
+
+@media(min-width: 680px) {
+  .benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 820px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

@@ -1,0 +1,141 @@
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sec-head {
+  max-width: 60ch;
+}
+
+.sec-kick {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 14px;
+}
+
+.sec-kick .bar {
+  width: 26px;
+  height: 3px;
+  background: var(--rust);
+}
+
+.sec-h2 {
+  font-weight: 800;
+  font-size: clamp(1.9rem, 6vw, 3.1rem);
+  line-height: 1.02;
+  letter-spacing: -.025em;
+}
+
+.sec-intro {
+  margin-top: 16px;
+  font-size: clamp(1rem, 2.3vw, 1.12rem);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.supply {
+  padding: var(--pad);
+  padding-top: 58px;
+  padding-bottom: 58px;
+  border-top: 2px solid var(--ink);
+}
+
+.cat-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.cat {
+  position: relative;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  padding: 18px 18px 18px 20px;
+  overflow: hidden;
+  transition: transform .2s ease;
+}
+
+.cat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--rust);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .25s ease;
+}
+
+.cat:hover {
+  transform: translateX(4px);
+}
+
+.cat:hover::before {
+  transform: scaleY(1);
+}
+
+.cat__no {
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: var(--rust);
+}
+
+.cat__name {
+  font-weight: 800;
+  font-size: 1.22rem;
+  letter-spacing: -.01em;
+  margin-top: 6px;
+  line-height: 1.08;
+}
+
+.cat__list {
+  margin-top: 9px;
+  font-size: .92rem;
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+
+.supply-note {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--ink-2);
+}
+
+.supply-note .tick {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  background: var(--ink);
+  color: var(--kraft);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+@media(min-width: 560px) {
+  .cat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 900px) {
+  .cat-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

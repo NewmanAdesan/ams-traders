@@ -1,0 +1,165 @@
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sec-head {
+  max-width: 60ch;
+}
+
+.sec-kick {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 14px;
+}
+
+.sec-kick .bar {
+  width: 26px;
+  height: 3px;
+  background: var(--rust);
+}
+
+.sec-h2 {
+  font-weight: 800;
+  font-size: clamp(1.9rem, 6vw, 3.1rem);
+  line-height: 1.02;
+  letter-spacing: -.025em;
+}
+
+.sec-intro {
+  margin-top: 16px;
+  font-size: clamp(1rem, 2.3vw, 1.12rem);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.contact {
+  padding: var(--pad);
+  padding-top: 58px;
+  padding-bottom: 64px;
+}
+
+.contact-grid {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.yard {
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  padding: 26px 22px;
+}
+
+.yard__label {
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.yard__addr {
+  font-weight: 800;
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  line-height: 1.18;
+  letter-spacing: -.01em;
+  margin-top: 10px;
+}
+
+.dir {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  border-bottom: 2px solid var(--rust);
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+
+.dir:hover {
+  color: var(--rust);
+}
+
+.hours {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.hours__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.hours__d {
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+.hours__t {
+  font-weight: 600;
+  font-size: .92rem;
+  color: var(--ink-2);
+}
+
+.reach {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.rcard {
+  background: var(--kraft-2);
+  border: 1.5px solid var(--ink);
+  padding: 18px 18px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform .2s ease, border-color .2s;
+}
+
+.rcard:hover {
+  transform: translateX(4px);
+  border-color: var(--rust);
+}
+
+.rcard__k {
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.rcard__v {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-top: 7px;
+  word-break: break-word;
+}
+
+.rcard:hover .rcard__v {
+  color: var(--rust);
+}
+
+@media(min-width: 820px) {
+  .contact-grid {
+    grid-template-columns: 1.25fr .85fr;
+    gap: 24px;
+  }
+}
