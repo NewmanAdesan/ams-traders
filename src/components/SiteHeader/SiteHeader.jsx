@@ -39,7 +39,7 @@ export default function SiteHeader({ activeSection }) {
     <>
       <header className={styles.topbar}>
         <a className={styles.logo} href="#top" aria-label="A.M.S Traders home">
-          <div className={styles.logo__mark}>AMS</div>
+          {/* <div className={styles.logo__mark}>AMS</div> */}
           <div>
             <div className={styles.logo__name}>A.M.S TRADERS</div>
             <div className={styles.logo__sub}>(U.K) Ltd · Sheerness</div>
